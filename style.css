@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(66, 64, 41, 0.189);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1%;
+
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0 20px;
+    padding: 2%;
+}
+
+.div-acertos-erros-total {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1%;
+    border: solid black 2px;
+}
+
+section {
+    margin-top: -15px;
+    padding: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cenario {
+    position: relative;
+    width: 70%;
+    padding-top: 40%;
+    /* isso vai deixar o tamanho sempre proporcional independente da tela */
+    overflow: hidden;
+    cursor: url("img/target.png"), default;
+
+    background-image: url(img/cenario_zumbi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#alvo {
+    position: absolute;
+    width: 10%;
+    padding-top: 15%;
+    /* isso vai deixar o tamanho sempre proporcional independente da tela, nesse caso como está com o mesmo valor do width ele sempre vai ser um quadrado perfeito */
+    background-image: url(img/R.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.footer {
+    background-color: grey;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1%;
+
+}
+
+.p1,
+.p2 {
+    text-align: center;
+    padding: 1%;
+}
+
+.paragrafos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    #cenario {
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    #cenario {
+        width: 100%;
+    }
+
+    .p1, .p2 {
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+.container{
+    background-color: rgba(66, 64, 41, 0.189);
+}
+
+thead, tr{
+    background-color: grey;;
+}
